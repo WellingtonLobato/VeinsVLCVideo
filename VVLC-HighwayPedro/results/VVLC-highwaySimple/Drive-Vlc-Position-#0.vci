@@ -1,0 +1,281 @@
+file 102916 1544113178                                          
+version 2
+run Drive-Vlc-Position-0-20181206-14:18:50-14628
+attr configname Drive-Vlc-Position
+attr datetime 20181206-14:18:50
+attr experiment vlc-experiment-highwaySimple
+attr inifile omnetpp1.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network scenarioPedro
+attr processid 14628
+attr repetition 0
+attr replication #0
+attr resultdir results/VVLC-highwaySimple/
+attr runnumber 0
+attr seedset 0
+param **.coreDebug false
+param **.debug false
+param **.draw false
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.mac1609_4.txPower 1.6mW
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.sensitivity -94dBm
+param *.**.nic.phy80211p.thermalNoise -110dBm
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.useThermalNoise true
+param *.**.nicVlc**.phyVlc.analogueModels "xmldoc(\"config-vlc.xml\")"
+param *.**.nicVlc**.phyVlc.bandwidth 1.0MHz
+param *.**.nicVlc**.phyVlc.bitrate 6Mbps
+param *.**.nicVlc**.phyVlc.centerFrequency 666000GHz
+param *.**.nicVlc**.phyVlc.decider "xmldoc(\"config-vlc.xml\")"
+param *.**.nicVlc**.phyVlc.sensitivity -114dBm
+param *.**.nicVlc**.phyVlc.thermalNoise -110dBm
+param *.**.nicVlc**.phyVlc.txPower 10mW
+param *.**.nicVlc**.phyVlc.usePropagationDelay true
+param *.**.nicVlc**.phyVlc.useThermalNoise true
+param *.**.nicVlcHead.direction "\"head\""
+param *.**.nicVlcTail.direction "\"tail\""
+param *.**.splitter.drawHeadHalfAngle 45deg
+param *.**.splitter.drawTailHalfAngle 60deg
+param *.annotations.draw true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.sendDirect true
+param *.manager.commandLine "\"sumo-gui --remote-port $port --seed $seed --configuration-file $configFile\""
+param *.manager.configFile "\"curved-road/sumo.sumocfg\""
+param *.manager.distanceVehicles 250m
+param *.manager.moduleType "\"org.car2x.veins.modules.vlc.CarVlc\""
+param *.manager.numVehicles 2
+param *.manager.updateInterval 0.1s
+param *.node[*].applType "\"org.car2x.veins.modules.vlc.application.PositionVlcApp.PositionVlcApp\""
+param *.node[*].application.beaconingFrequency 1Hz
+param *.node[*].application.debug true
+param *.node[*].application.packetByteLength 1024byte
+param *.node[*].application.repetition 0
+param *.node[*].nicVlc**.phyVLC.debug false
+param *.node[*].splitter.debug true
+param *.node[*].splitter.draw true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+param *.node[14].application.posReq false
+param *.node[2].application.posReq false
+param *.node[9].application.posReq true
+param *.playgroundSizeX 10000m
+param *.playgroundSizeY 500m
+param *.playgroundSizeZ 50m
+
+vector 2  scenarioPedro.node[0].veinsmobility  posx  ETV
+vector 3  scenarioPedro.node[0].veinsmobility  posy  ETV
+vector 13  scenarioPedro.node[1].veinsmobility  posx  ETV
+vector 14  scenarioPedro.node[1].veinsmobility  posy  ETV
+vector 24  scenarioPedro.node[2].veinsmobility  posx  ETV
+vector 25  scenarioPedro.node[2].veinsmobility  posy  ETV
+vector 35  scenarioPedro.node[3].veinsmobility  posx  ETV
+vector 36  scenarioPedro.node[3].veinsmobility  posy  ETV
+vector 46  scenarioPedro.node[4].veinsmobility  posx  ETV
+vector 47  scenarioPedro.node[4].veinsmobility  posy  ETV
+vector 57  scenarioPedro.node[5].veinsmobility  posx  ETV
+vector 58  scenarioPedro.node[5].veinsmobility  posy  ETV
+vector 68  scenarioPedro.node[6].veinsmobility  posx  ETV
+vector 69  scenarioPedro.node[6].veinsmobility  posy  ETV
+vector 79  scenarioPedro.node[7].veinsmobility  posx  ETV
+vector 80  scenarioPedro.node[7].veinsmobility  posy  ETV
+vector 90  scenarioPedro.node[8].veinsmobility  posx  ETV
+vector 91  scenarioPedro.node[8].veinsmobility  posy  ETV
+vector 101  scenarioPedro.node[9].veinsmobility  posx  ETV
+vector 102  scenarioPedro.node[9].veinsmobility  posy  ETV
+vector 112  scenarioPedro.node[10].veinsmobility  posx  ETV
+vector 113  scenarioPedro.node[10].veinsmobility  posy  ETV
+vector 123  scenarioPedro.node[11].veinsmobility  posx  ETV
+vector 124  scenarioPedro.node[11].veinsmobility  posy  ETV
+vector 134  scenarioPedro.node[12].veinsmobility  posx  ETV
+vector 135  scenarioPedro.node[12].veinsmobility  posy  ETV
+vector 145  scenarioPedro.node[13].veinsmobility  posx  ETV
+vector 146  scenarioPedro.node[13].veinsmobility  posy  ETV
+vector 156  scenarioPedro.node[14].veinsmobility  posx  ETV
+vector 157  scenarioPedro.node[14].veinsmobility  posy  ETV
+vector 167  scenarioPedro.node[15].veinsmobility  posx  ETV
+vector 168  scenarioPedro.node[15].veinsmobility  posy  ETV
+vector 178  scenarioPedro.node[16].veinsmobility  posx  ETV
+vector 179  scenarioPedro.node[16].veinsmobility  posy  ETV
+vector 189  scenarioPedro.node[17].veinsmobility  posx  ETV
+vector 190  scenarioPedro.node[17].veinsmobility  posy  ETV
+vector 200  scenarioPedro.node[18].veinsmobility  posx  ETV
+vector 201  scenarioPedro.node[18].veinsmobility  posy  ETV
+vector 211  scenarioPedro.node[19].veinsmobility  posx  ETV
+vector 212  scenarioPedro.node[19].veinsmobility  posy  ETV
+vector 222  scenarioPedro.node[20].veinsmobility  posx  ETV
+vector 223  scenarioPedro.node[20].veinsmobility  posy  ETV
+vector 4  scenarioPedro.node[0].veinsmobility  speed  ETV
+vector 15  scenarioPedro.node[1].veinsmobility  speed  ETV
+vector 26  scenarioPedro.node[2].veinsmobility  speed  ETV
+vector 37  scenarioPedro.node[3].veinsmobility  speed  ETV
+vector 48  scenarioPedro.node[4].veinsmobility  speed  ETV
+vector 59  scenarioPedro.node[5].veinsmobility  speed  ETV
+vector 70  scenarioPedro.node[6].veinsmobility  speed  ETV
+vector 81  scenarioPedro.node[7].veinsmobility  speed  ETV
+vector 92  scenarioPedro.node[8].veinsmobility  speed  ETV
+vector 103  scenarioPedro.node[9].veinsmobility  speed  ETV
+vector 114  scenarioPedro.node[10].veinsmobility  speed  ETV
+vector 125  scenarioPedro.node[11].veinsmobility  speed  ETV
+vector 136  scenarioPedro.node[12].veinsmobility  speed  ETV
+vector 147  scenarioPedro.node[13].veinsmobility  speed  ETV
+vector 158  scenarioPedro.node[14].veinsmobility  speed  ETV
+vector 169  scenarioPedro.node[15].veinsmobility  speed  ETV
+vector 180  scenarioPedro.node[16].veinsmobility  speed  ETV
+vector 191  scenarioPedro.node[17].veinsmobility  speed  ETV
+vector 202  scenarioPedro.node[18].veinsmobility  speed  ETV
+vector 213  scenarioPedro.node[19].veinsmobility  speed  ETV
+vector 224  scenarioPedro.node[20].veinsmobility  speed  ETV
+vector 5  scenarioPedro.node[0].veinsmobility  acceleration  ETV
+vector 6  scenarioPedro.node[0].veinsmobility  co2emission  ETV
+vector 16  scenarioPedro.node[1].veinsmobility  acceleration  ETV
+vector 17  scenarioPedro.node[1].veinsmobility  co2emission  ETV
+vector 27  scenarioPedro.node[2].veinsmobility  acceleration  ETV
+vector 28  scenarioPedro.node[2].veinsmobility  co2emission  ETV
+vector 38  scenarioPedro.node[3].veinsmobility  acceleration  ETV
+vector 39  scenarioPedro.node[3].veinsmobility  co2emission  ETV
+vector 49  scenarioPedro.node[4].veinsmobility  acceleration  ETV
+vector 50  scenarioPedro.node[4].veinsmobility  co2emission  ETV
+vector 60  scenarioPedro.node[5].veinsmobility  acceleration  ETV
+vector 61  scenarioPedro.node[5].veinsmobility  co2emission  ETV
+vector 71  scenarioPedro.node[6].veinsmobility  acceleration  ETV
+vector 72  scenarioPedro.node[6].veinsmobility  co2emission  ETV
+vector 82  scenarioPedro.node[7].veinsmobility  acceleration  ETV
+vector 83  scenarioPedro.node[7].veinsmobility  co2emission  ETV
+vector 93  scenarioPedro.node[8].veinsmobility  acceleration  ETV
+vector 94  scenarioPedro.node[8].veinsmobility  co2emission  ETV
+vector 104  scenarioPedro.node[9].veinsmobility  acceleration  ETV
+vector 105  scenarioPedro.node[9].veinsmobility  co2emission  ETV
+vector 115  scenarioPedro.node[10].veinsmobility  acceleration  ETV
+vector 116  scenarioPedro.node[10].veinsmobility  co2emission  ETV
+vector 126  scenarioPedro.node[11].veinsmobility  acceleration  ETV
+vector 127  scenarioPedro.node[11].veinsmobility  co2emission  ETV
+vector 137  scenarioPedro.node[12].veinsmobility  acceleration  ETV
+vector 138  scenarioPedro.node[12].veinsmobility  co2emission  ETV
+vector 148  scenarioPedro.node[13].veinsmobility  acceleration  ETV
+vector 149  scenarioPedro.node[13].veinsmobility  co2emission  ETV
+vector 159  scenarioPedro.node[14].veinsmobility  acceleration  ETV
+vector 160  scenarioPedro.node[14].veinsmobility  co2emission  ETV
+vector 170  scenarioPedro.node[15].veinsmobility  acceleration  ETV
+vector 171  scenarioPedro.node[15].veinsmobility  co2emission  ETV
+vector 181  scenarioPedro.node[16].veinsmobility  acceleration  ETV
+vector 182  scenarioPedro.node[16].veinsmobility  co2emission  ETV
+vector 192  scenarioPedro.node[17].veinsmobility  acceleration  ETV
+vector 193  scenarioPedro.node[17].veinsmobility  co2emission  ETV
+vector 203  scenarioPedro.node[18].veinsmobility  acceleration  ETV
+vector 204  scenarioPedro.node[18].veinsmobility  co2emission  ETV
+vector 214  scenarioPedro.node[19].veinsmobility  acceleration  ETV
+vector 215  scenarioPedro.node[19].veinsmobility  co2emission  ETV
+vector 225  scenarioPedro.node[20].veinsmobility  acceleration  ETV
+vector 226  scenarioPedro.node[20].veinsmobility  co2emission  ETV
+6	9413 1175 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+5	10588 575 4 232 0.3 5.2 50 0 0 0 0
+4	11163 585 3 232 0.2 5.2 51 1 1 51 51
+3	11748 803 2 232 0.1 5.2 52 33.25 33.25 1729 57489.25
+2	12551 1073 2 232 0.1 5.2 52 75.09 80.089999999999 4032.18 312779.6212
+17	13624 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+16	14849 625 4 232 0.3 5.2 50 0 0 0 0
+15	15474 636 3 232 0.2 5.2 51 1 1 51 51
+14	16110 855 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+13	16965 1125 2 232 0.1 5.2 52 75.09 80.089999999999 4032.18 312779.6212
+28	18090 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+27	19315 625 4 232 0.3 5.2 50 0 0 0 0
+26	19940 636 3 232 0.2 5.2 51 1 1 51 51
+25	20576 855 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+24	21431 907 2 232 0.1 5.2 52 135.09 140.09 7152.1800000001 983841.22120002
+39	22338 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+38	23563 625 4 232 0.3 5.2 50 0 0 0 0
+37	24188 636 3 232 0.2 5.2 51 1 1 51 51
+36	24824 855 2 232 0.1 5.2 52 33.25 33.25 1729 57489.25
+35	25679 1065 2 232 0.1 5.2 52 85.09 90.09 4552.18 398623.2212
+50	26744 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+49	27969 625 4 232 0.3 5.2 50 0 0 0 0
+48	28594 636 3 232 0.2 5.2 51 1 1 51 51
+47	29230 855 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+46	30085 1065 2 232 0.1 5.2 52 85.09 90.09 4552.18 398623.2212
+61	31150 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+60	32375 625 4 232 0.3 5.2 50 0 0 0 0
+59	33000 636 3 232 0.2 5.2 51 1 1 51 51
+58	33636 855 2 232 0.1 5.2 52 26.65 26.65 1385.8 36931.57
+57	34491 1065 2 232 0.1 5.2 52 85.09 90.09 4552.18 398623.2212
+72	35556 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+71	36781 625 4 232 0.3 5.2 50 0 0 0 0
+70	37406 636 3 232 0.2 5.2 51 1 1 51 51
+69	38042 855 2 232 0.1 5.2 52 33.25 33.25 1729 57489.25
+68	38897 907 2 232 0.1 5.2 52 425.09 430.09 22232.18 9505305.6211999
+83	39804 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+82	41029 625 4 232 0.3 5.2 50 0 0 0 0
+81	41654 636 3 232 0.2 5.2 51 1 1 51 51
+80	42290 855 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+79	43145 907 2 232 0.1 5.2 52 425.09 430.09 22232.18 9505305.6211999
+94	44052 1225 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+93	45277 625 4 232 0.3 5.2 50 0 0 0 0
+92	45902 636 3 232 0.2 5.2 51 1 1 51 51
+91	46538 855 2 232 0.1 5.2 52 26.65 26.65 1385.8 36931.57
+90	47393 907 2 232 0.1 5.2 52 425.09 430.09 22232.18 9505305.6211999
+105	48300 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+104	49575 675 4 232 0.3 5.2 50 0 0 0 0
+103	50250 687 3 232 0.2 5.2 51 1 1 51 51
+102	50937 907 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+101	51844 959 2 232 0.1 5.2 52 325.09 330.09 17032.18 5578869.6211999
+116	52803 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+115	54078 675 4 232 0.3 5.2 50 0 0 0 0
+114	54753 687 3 232 0.2 5.2 51 1 1 51 51
+113	55440 907 2 232 0.1 5.2 52 33.25 33.25 1729 57489.25
+112	56347 959 2 232 0.1 5.2 52 225.09 230.09 11832.18 2692433.6211999
+127	57306 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+126	58581 675 4 232 0.3 5.2 50 0 0 0 0
+125	59256 687 3 232 0.2 5.2 51 1 1 51 51
+124	59943 907 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+123	60850 959 2 232 0.1 5.2 52 225.09 230.09 11832.18 2692433.6211999
+138	61809 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+137	63084 675 4 232 0.3 5.2 50 0 0 0 0
+136	63759 687 3 232 0.2 5.2 51 1 1 51 51
+135	64446 907 2 232 0.1 5.2 52 26.65 26.65 1385.8 36931.57
+134	65353 1177 2 232 0.1 5.2 52 75.09 80.089999999999 4032.18 312779.6212
+149	66530 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+148	67805 675 4 232 0.3 5.2 50 0 0 0 0
+147	68480 687 3 232 0.2 5.2 51 1 1 51 51
+146	69167 907 2 232 0.1 5.2 52 26.65 26.65 1385.8 36931.57
+145	70074 959 2 232 0.1 5.2 52 225.09 230.09 11832.18 2692433.6211999
+160	71033 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+159	72308 675 4 232 0.3 5.2 50 0 0 0 0
+158	72983 687 3 232 0.2 5.2 51 1 1 51 51
+157	73670 907 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+156	74577 907 2 232 0.1 5.2 52 55.09 60.09 2992.18 172292.4212
+171	75484 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+170	76759 675 4 232 0.3 5.2 50 0 0 0 0
+169	77434 687 3 232 0.2 5.2 51 1 1 51 51
+168	78121 907 2 232 0.1 5.2 52 33.25 33.25 1729 57489.25
+167	79028 1097 2 232 0.1 5.2 52 45.09 50.090000000001 2472.18 117648.8212
+182	80125 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+181	81400 675 4 232 0.3 5.2 50 0 0 0 0
+180	82075 687 3 232 0.2 5.2 51 1 1 51 51
+179	82762 907 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+178	83669 1097 2 232 0.1 5.2 52 45.09 50.090000000001 2472.18 117648.8212
+193	84766 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+192	86041 675 4 232 0.3 5.2 50 0 0 0 0
+191	86716 687 3 232 0.2 5.2 51 1 1 51 51
+190	87403 907 2 232 0.1 5.2 52 26.65 26.65 1385.8 36931.57
+189	88310 1097 2 232 0.1 5.2 52 45.09 50.090000000001 2472.18 117648.8212
+204	89407 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+203	90682 675 4 232 0.3 5.2 50 0 0 0 0
+202	91357 687 3 232 0.2 5.2 51 1 1 51 51
+201	92044 907 2 232 0.1 5.2 52 33.25 33.25 1729 57489.25
+200	92951 959 2 232 0.1 5.2 52 185.09 190.09 9752.1799999999 1829059.2212
+215	93910 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+214	95185 675 4 232 0.3 5.2 50 0 0 0 0
+213	95860 687 3 232 0.2 5.2 51 1 1 51 51
+212	96547 907 2 232 0.1 5.2 52 29.95 29.95 1557.4 46644.13
+211	97454 959 2 232 0.1 5.2 52 185.09 190.09 9752.1799999999 1829059.2212
+226	98413 1275 4 232 0.3 5.2 50 1.15833237888 1.15833237888 57.916618944 67.08669499809
+225	99688 675 4 232 0.3 5.2 50 0 0 0 0
+224	100363 687 3 232 0.2 5.2 51 1 1 51 51
+223	101050 907 2 232 0.1 5.2 52 26.65 26.65 1385.8 36931.57
+222	101957 959 2 232 0.1 5.2 52 185.09 190.09 9752.1799999999 1829059.2212

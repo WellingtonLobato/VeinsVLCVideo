@@ -1,0 +1,679 @@
+version 2
+run Drive-Vlc-Position-0-20181206-14:18:50-14628
+attr configname Drive-Vlc-Position
+attr datetime 20181206-14:18:50
+attr experiment vlc-experiment-highwaySimple
+attr inifile omnetpp1.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network scenarioPedro
+attr processid 14628
+attr repetition 0
+attr replication #0
+attr resultdir results/VVLC-highwaySimple/
+attr runnumber 0
+attr seedset 0
+param **.coreDebug false
+param **.debug false
+param **.draw false
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.mac1609_4.txPower 1.6mW
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.sensitivity -94dBm
+param *.**.nic.phy80211p.thermalNoise -110dBm
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.useThermalNoise true
+param *.**.nicVlc**.phyVlc.analogueModels "xmldoc(\"config-vlc.xml\")"
+param *.**.nicVlc**.phyVlc.bandwidth 1.0MHz
+param *.**.nicVlc**.phyVlc.bitrate 6Mbps
+param *.**.nicVlc**.phyVlc.centerFrequency 666000GHz
+param *.**.nicVlc**.phyVlc.decider "xmldoc(\"config-vlc.xml\")"
+param *.**.nicVlc**.phyVlc.sensitivity -114dBm
+param *.**.nicVlc**.phyVlc.thermalNoise -110dBm
+param *.**.nicVlc**.phyVlc.txPower 10mW
+param *.**.nicVlc**.phyVlc.usePropagationDelay true
+param *.**.nicVlc**.phyVlc.useThermalNoise true
+param *.**.nicVlcHead.direction "\"head\""
+param *.**.nicVlcTail.direction "\"tail\""
+param *.**.splitter.drawHeadHalfAngle 45deg
+param *.**.splitter.drawTailHalfAngle 60deg
+param *.annotations.draw true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.sendDirect true
+param *.manager.commandLine "\"sumo-gui --remote-port $port --seed $seed --configuration-file $configFile\""
+param *.manager.configFile "\"curved-road/sumo.sumocfg\""
+param *.manager.distanceVehicles 250m
+param *.manager.moduleType "\"org.car2x.veins.modules.vlc.CarVlc\""
+param *.manager.numVehicles 2
+param *.manager.updateInterval 0.1s
+param *.node[*].applType "\"org.car2x.veins.modules.vlc.application.PositionVlcApp.PositionVlcApp\""
+param *.node[*].application.beaconingFrequency 1Hz
+param *.node[*].application.debug true
+param *.node[*].application.packetByteLength 1024byte
+param *.node[*].application.repetition 0
+param *.node[*].nicVlc**.phyVLC.debug false
+param *.node[*].splitter.debug true
+param *.node[*].splitter.draw true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 1.895
+param *.node[14].application.posReq false
+param *.node[2].application.posReq false
+param *.node[9].application.posReq true
+param *.playgroundSizeX 10000m
+param *.playgroundSizeY 500m
+param *.playgroundSizeZ 50m
+
+scalar scenarioPedro.node[0].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[0].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[0].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[0].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[0].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[0].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[0].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[0].veinsmobility 	totalDistance 	5.099999999999
+scalar scenarioPedro.node[0].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[0].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[0].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[0].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[0].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[0].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[0].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[0].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[0].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[0].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[1].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[1].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[1].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[1].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[1].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[1].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[1].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[1].veinsmobility 	totalDistance 	5.099999999999
+scalar scenarioPedro.node[1].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[1].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[1].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[1].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[1].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[1].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[1].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[1].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[1].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[1].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[2].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[2].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[2].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[2].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[2].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[2].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[2].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[2].veinsmobility 	totalDistance 	5.1000000000026
+scalar scenarioPedro.node[2].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[2].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[2].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[2].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[2].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[2].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[2].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[2].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[2].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[2].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[3].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[3].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[3].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[3].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[3].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[3].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[3].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[3].veinsmobility 	totalDistance 	5.0999999999998
+scalar scenarioPedro.node[3].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[3].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[3].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[3].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[3].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[3].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[3].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[3].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[3].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[3].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[4].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[4].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[4].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[4].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[4].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[4].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[4].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[4].veinsmobility 	totalDistance 	5.0999999999998
+scalar scenarioPedro.node[4].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[4].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[4].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[4].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[4].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[4].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[4].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[4].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[4].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[4].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[5].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[5].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[5].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[5].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[5].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[5].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[5].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[5].veinsmobility 	totalDistance 	5.0999999999998
+scalar scenarioPedro.node[5].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[5].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[5].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[5].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[5].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[5].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[5].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[5].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[5].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[5].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[6].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[6].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[6].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[6].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[6].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[6].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[6].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[6].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[6].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[6].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[6].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[6].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[6].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[6].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[6].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[6].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[6].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[6].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[7].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[7].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[7].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[7].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[7].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[7].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[7].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[7].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[7].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[7].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[7].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[7].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[7].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[7].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[7].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[7].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[7].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[7].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[8].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[8].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[8].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[8].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[8].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[8].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[8].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[8].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[8].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[8].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[8].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[8].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[8].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[8].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[8].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[8].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[8].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[8].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[9].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[9].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[9].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[9].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[9].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[9].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[9].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[9].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[9].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[9].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[9].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[9].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[9].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[9].splitter 	vlcPacketsSent 	1
+scalar scenarioPedro.node[9].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[9].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[9].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[9].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[10].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[10].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[10].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[10].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[10].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[10].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[10].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[10].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[10].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[10].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[10].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[10].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[10].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[10].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[10].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[10].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[10].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[10].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[11].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[11].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[11].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[11].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[11].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[11].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[11].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[11].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[11].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[11].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[11].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[11].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[11].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[11].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[11].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[11].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[11].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[11].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[12].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[12].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[12].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[12].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[12].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[12].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[12].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[12].veinsmobility 	totalDistance 	5.099999999999
+scalar scenarioPedro.node[12].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[12].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[12].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[12].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[12].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[12].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[12].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[12].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[12].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[12].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[13].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[13].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[13].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[13].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[13].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[13].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[13].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[13].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[13].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[13].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[13].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[13].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[13].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[13].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[13].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[13].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[13].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[13].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[14].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[14].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[14].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[14].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[14].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[14].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[14].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[14].veinsmobility 	totalDistance 	5.0999999999997
+scalar scenarioPedro.node[14].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[14].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[14].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[14].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[14].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[14].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[14].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[14].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[14].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[14].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[15].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[15].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[15].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[15].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[15].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[15].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[15].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[15].veinsmobility 	totalDistance 	5.1000000000008
+scalar scenarioPedro.node[15].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[15].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[15].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[15].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[15].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[15].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[15].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[15].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[15].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[15].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[16].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[16].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[16].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[16].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[16].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[16].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[16].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[16].veinsmobility 	totalDistance 	5.1000000000008
+scalar scenarioPedro.node[16].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[16].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[16].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[16].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[16].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[16].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[16].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[16].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[16].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[16].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[17].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[17].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[17].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[17].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[17].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[17].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[17].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[17].veinsmobility 	totalDistance 	5.1000000000008
+scalar scenarioPedro.node[17].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[17].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[17].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[17].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[17].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[17].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[17].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[17].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[17].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[17].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[18].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[18].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[18].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[18].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[18].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[18].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[18].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[18].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[18].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[18].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[18].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[18].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[18].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[18].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[18].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[18].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[18].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[18].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[19].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[19].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[19].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[19].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[19].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[19].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[19].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[19].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[19].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[19].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[19].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[19].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[19].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[19].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[19].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[19].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[19].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[19].splitter 	totalVlcDelay:mean 	-nan
+scalar scenarioPedro.node[20].nic.phy80211p 	busyTime 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	ReceivedUnicastPackets 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	ReceivedBroadcasts 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	SentPackets 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	SNIRLostPackets 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	RXTXLostPackets 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	TotalLostPackets 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	DroppedPacketsInMac 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	TooLittleTime 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	TimesIntoBackoff 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	SlotsBackoff 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	NumInternalContention 	0
+scalar scenarioPedro.node[20].nic.mac1609_4 	totalBusyTime 	0
+scalar scenarioPedro.node[20].veinsmobility 	startTime 	0.1
+scalar scenarioPedro.node[20].veinsmobility 	totalTime 	5.1
+scalar scenarioPedro.node[20].veinsmobility 	stopTime 	5.3
+scalar scenarioPedro.node[20].veinsmobility 	minSpeed 	1
+scalar scenarioPedro.node[20].veinsmobility 	maxSpeed 	1
+scalar scenarioPedro.node[20].veinsmobility 	totalDistance 	5.0999999999954
+scalar scenarioPedro.node[20].veinsmobility 	totalCO2Emission 	5.7916618944
+scalar scenarioPedro.node[20].splitter 	headlightPacketsSent 	0
+scalar scenarioPedro.node[20].splitter 	headlightPacketsReceived 	0
+scalar scenarioPedro.node[20].splitter 	taillightPacketsSent 	0
+scalar scenarioPedro.node[20].splitter 	taillightPacketsReceived 	0
+scalar scenarioPedro.node[20].splitter 	vlcPacketsSent 	0
+scalar scenarioPedro.node[20].splitter 	vlcPacketsReceived 	0
+scalar scenarioPedro.node[20].splitter 	tailVlcDelay:mean 	-nan
+scalar scenarioPedro.node[20].splitter 	headVlcDelay:mean 	-nan
+scalar scenarioPedro.node[20].splitter 	totalVlcDelay:mean 	-nan
